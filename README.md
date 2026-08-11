@@ -12,8 +12,9 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
 
 ## Progreso
 - [x] Día 1 — Entorno preparado
-- [x] Día 2 —  Repo creado
-- [x] Día 3 Entorno de Power Platform / Copilot Studio activo y accesible
+  - Tenant creado: tudominio.onmicrosoft.com
+  - Copilot Studio: trial activo
+  - Power Apps Developer Plan: activo
 
 ## Proyectos
 1. Agente de FAQ (en progreso)
