@@ -12,7 +12,8 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
 
 ## Progreso
 - [x] Día 1 — Entorno preparado
-- [ ] Día 2 — ...
+- [x] Día 2 —  Repo creado
+- [x] Día 3 Entorno de Power Platform / Copilot Studio activo y accesible
 
 ## Proyectos
 1. Agente de FAQ (en progreso)
