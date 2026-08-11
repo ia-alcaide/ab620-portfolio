@@ -15,6 +15,9 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
   - Tenant creado: tudominio.onmicrosoft.com
   - Copilot Studio: trial activo
   - Power Apps Developer Plan: activo
+  - Agente Creado
+  - <img width="711" height="272" alt="imagen" src="https://github.com/user-attachments/assets/5530b824-a727-4a6f-90dc-e49a2b8838a9" />
+
 
 ## Proyectos
 1. Agente de FAQ (en progreso)
