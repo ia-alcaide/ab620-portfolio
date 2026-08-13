@@ -28,7 +28,7 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
   - Probado con éxito: "Tu solicitud de vacaciones se ha enviado correctamente."
   - Limitación descubierta: depende de aprobar en <100s, no viable para
     producción con usuarios reales que no están pendientes al instante
-    <img width="519" height="230" alt="imagen" src="https://github.com/user-attachments/assets/3113de8a-2337-4852-91e1-01415694c4fb" />
+ <img width="519" height="230" alt="imagen" src="https://github.com/user-attachments/assets/3113de8a-2337-4852-91e1-01415694c4fb" />
 
   - Próximo paso (Día 3): rediseñar como HITL asíncrono
 
