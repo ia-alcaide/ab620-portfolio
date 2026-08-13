@@ -16,6 +16,12 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
   - Copilot Studio: trial activo
   - Power Apps Developer Plan: activo
 
+- [x] Agente Creado
+  - <img width="711" height="272" alt="imagen" src="https://github.com/user-attachments/assets/5530b824-a727-4a6f-90dc-e49a2b8838a9" />
+
+- [x] Agente alimentado indicando comportamiento y limitando su conocimiento solo a las fuentes proporcionadas
+  <img width="739" height="290" alt="imagen" src="https://github.com/user-attachments/assets/1a91be09-8fb4-487e-927c-83e66c072682" />
+
 - [x] Día 2 — Agent flow con confirmación humana (RegistrarSolicitud)
   - Funciona de extremo a extremo: input → aprobación → condición → 
     variable → respuesta al agente
@@ -25,14 +31,6 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
     <img width="519" height="230" alt="imagen" src="https://github.com/user-attachments/assets/3113de8a-2337-4852-91e1-01415694c4fb" />
 
   - Próximo paso (Día 3): rediseñar como HITL asíncrono
-
-- [x] Agente Creado
-  - <img width="711" height="272" alt="imagen" src="https://github.com/user-attachments/assets/5530b824-a727-4a6f-90dc-e49a2b8838a9" />
-
-- [x] Agente alimentado indicando comportamiento y limitando su conocimiento solo a las fuentes proporcionadas
-  <img width="739" height="290" alt="imagen" src="https://github.com/user-attachments/assets/1a91be09-8fb4-487e-927c-83e66c072682" />
-
-
 
 ## Proyectos
 1. Agente de FAQ (en progreso)
