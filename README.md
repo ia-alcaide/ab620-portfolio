@@ -16,6 +16,16 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
   - Copilot Studio: trial activo
   - Power Apps Developer Plan: activo
 
+- [x] Día 2 — Agent flow con confirmación humana (RegistrarSolicitud)
+  - Funciona de extremo a extremo: input → aprobación → condición → 
+    variable → respuesta al agente
+  - Probado con éxito: "Tu solicitud de vacaciones se ha enviado correctamente."
+  - Limitación descubierta: depende de aprobar en <100s, no viable para
+    producción con usuarios reales que no están pendientes al instante
+    <img width="519" height="230" alt="imagen" src="https://github.com/user-attachments/assets/3113de8a-2337-4852-91e1-01415694c4fb" />
+
+  - Próximo paso (Día 3): rediseñar como HITL asíncrono
+
 - [x] Agente Creado
   - <img width="711" height="272" alt="imagen" src="https://github.com/user-attachments/assets/5530b824-a727-4a6f-90dc-e49a2b8838a9" />
 
