@@ -30,7 +30,15 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
     producción con usuarios reales que no están pendientes al instante
  <img width="519" height="230" alt="imagen" src="https://github.com/user-attachments/assets/3113de8a-2337-4852-91e1-01415694c4fb" />
 
-  - Próximo paso (Día 3): rediseñar como HITL asíncrono
+ - [x] Día 3 — HITL asíncrono + gestión de errores
+  - Rediseño: "Responder al agente" movido justo tras el trigger,
+    con mensaje inmediato fijo ("Solicitud recibida...")
+  - Aprobación + condición + notificación por email corren en
+    segundo plano, sin bloquear la conversación
+  - Comparativa documentada: HITL síncrono (Día 4, frágil,
+    depende de <100s) vs HITL asíncrono (Día 5, robusto,
+    responde al instante y notifica el resultado después)
+  - Competencia AB-620: "Manage human-in-the-loop scenarios in agents"
 
 ## Proyectos
 1. Agente de FAQ (en progreso)
