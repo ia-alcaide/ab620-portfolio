@@ -40,6 +40,17 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
     responde al instante y notifica el resultado después)
   - Competencia AB-620: "Manage human-in-the-loop scenarios in agents"
 
+- [x] Día 4 — Skills sustituyendo a Topics
+  - Skill "Solicitar vacaciones" recoge datos incompletos preguntando
+    lo que falta (días, motivo) — sin necesidad de nodos ni entidades
+  - Flow ampliado con input `Dias` (número) + `Motivo` (texto)
+  - Patrón final: skill recoge datos y dispara la herramienta sin
+    intentar confirmar por su cuenta (poco fiable, LLM-based);
+    el flow garantiza la seguridad real con aprobación humana
+    determinista + respuesta asíncrona inmediata al agente
+  - Sistema probado de extremo a extremo: conversación natural →
+    extracción de datos → ejecución → aprobación → notificación
+
 ## Proyectos
 1. Agente de FAQ (en progreso)
 2. Agente de soporte interno
