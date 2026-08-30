@@ -51,6 +51,30 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
   - Sistema probado de extremo a extremo: conversación natural →
     extracción de datos → ejecución → aprobación → notificación
 
+- [x] Día 5 — Conector estándar (SharePoint)
+  - Lista "Políticas" en SharePoint conectada como herramienta
+    "Obtener elementos" (Get items)
+  - Parámetros clave: dirección de sitio y nombre de lista configurados
+    como "Valor" fijo (no "IA"), porque son datos técnicos constantes,
+    no información que aporta el usuario en la conversación
+  - Ventaja frente a conocimiento estático (PDF, Día 3): los datos
+    se leen en vivo, así que si alguien actualiza la lista de RRHH,
+    el agente responde siempre con la información más reciente
+  - Probado con éxito: respuesta exacta + cita de fuente con enlace
+     
+- [x] Día 6 — Prueba PostMan y creación de Conector personalizado con el agente.
+
+- [x] Día 7 — Autenticación: API Key vs OAuth
+  - API Key probada con éxito (exchangerate-api.com) — clave enviada
+    como parámetro en la URL, respuesta 200 con datos en tiempo real
+  - OAuth identificado retrospectivamente en el conector de SharePoint
+    (Día 5): login + consentimiento en vez de clave suelta
+  - Diferencia clave: API Key = clave fija sin identidad de usuario;
+    OAuth = token temporal ligado a una identidad, con permisos
+    limitados y revocación automática por caducidad
+  - Nota de seguridad: nunca exponer la API Key real en capturas
+    o repos públicos (se ha usado una key de prueba desechable)
+
 ## Proyectos
 1. Agente de FAQ (en progreso)
 2. Agente de soporte interno
