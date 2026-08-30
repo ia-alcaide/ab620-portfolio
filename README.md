@@ -75,6 +75,47 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
   - Nota de seguridad: nunca exponer la API Key real en capturas
     o repos públicos (se ha usado una key de prueba desechable)
 
+- [x] Día 8 — Introducción a MCP
+  - MCP = protocolo estándar para que un agente use herramientas de
+    forma uniforme, en vez de una integración a medida por sistema
+  - Catálogo real visto en Copilot Studio (28/08/2026... o la fecha
+    de hoy): Calendar, Copilot, Fabric IQ Data MCP, Mail, Servidor MCP
+    de Microsoft Dataverse, OneDrive, SharePoint, Teams, User,
+    Work IQ (Preview), Azure - Foundry IQ, Azure Data Explorer,
+    D365 Contact Center Admin MCP, Dynamics 365 Business Central
+  - Varios sistemas (SharePoint, OneDrive, Teams) están disponibles
+    tanto como conector clásico como servidor MCP — coexisten
+  - "Work IQ" marcado como Preview → matiz de licencia/disponibilidad
+    relevante para el examen
+
+- [x] Día 9 — Introducción a MCP
+  - Conectado servidor MCP de Microsoft Dataverse (OAuth con cuenta
+    de usuario, no API Key)
+  - Tool discovery confirmado: 4 herramientas expuestas automáticamente
+    por el servidor sin definición manual: read_query, create_table,
+    update_table, delete_table
+  - Hallazgo de seguridad: delete_table exige "consentimiento explícito
+    del usuario" en su propia descripción — MCP incorpora HITL para
+    acciones destructivas por diseño, mismo principio que construimos
+    manualmente en el Día 4-5 con el agent flow de aprobación
+  - Diferencia clave con conector personalizado (Día 10): MCP = catálogo
+    de herramientas ya definido por el proveedor; conector = tú defines
+    cada acción a mano desde una API sin estándar
+
+- [x] Día 10 — read_query en acción (Dataverse MCP)
+  - Tabla Empleado creada con datos de prueba
+  - HALLAZGO 1: el agente no elige una fuente de datos correcta sin
+    instrucciones explícitas sobre qué contiene cada una (ya lo vimos)
+  - HALLAZGO 2: nombre para mostrar ≠ nombre lógico en Dataverse.
+    "Empleado" (display) vs "crfdb_empleado" (logical) — el prefijo
+    depende del editor de solución del entorno. Mismo patrón aplica
+    a columnas (crfdb_nombre, no "Nombre").
+  - Instrucciones ajustadas con el nombre lógico correcto → consulta
+    SQL generada automáticamente y respuesta exacta con cita de fuente
+  - Competencia AB-620: "Configure and manage MCP tools" +
+    depuración de esquema de datos real
+
+
 ## Proyectos
 1. Agente de FAQ (en progreso)
 2. Agente de soporte interno
