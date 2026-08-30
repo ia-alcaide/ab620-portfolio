@@ -115,6 +115,9 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
   - Competencia AB-620: "Configure and manage MCP tools" +
     depuración de esquema de datos real
 
+- [x] Día 11
+  Repaso + mini-simulacro (3.5/5) — Lección: no generalizar desde un único caso práctico a la regla del examen
+
 
 ## Proyectos
 1. Agente de FAQ (en progreso)
