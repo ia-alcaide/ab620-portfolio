@@ -129,6 +129,17 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
     de filas dispararía múltiples emails sin control — mejora
     pendiente para diseño de producción real
   - Competencia AB-620: "Configure event-triggered automation"
+     
+- [x] Día 13 — Connected agents: patrón multiagente (A2A)
+  - Creado agente "Especialista IT" con instrucciones propias,
+    publicado y conectado como Connected agent desde "Atención al cliente"
+  - Probado con éxito: consulta técnica ("wifi no conecta") delegada
+    automáticamente al especialista, con respuesta estructurada
+    (checklist de 5 pasos) devuelta dentro de la misma conversación
+  - El agente principal decide cuándo delegar según la descripción
+    del agente conectado — mismo mecanismo de "tool selection" que
+    con Skills y Herramientas
+  - Competencia AB-620: "Configure multi-agent collaboration (A2A)"
 
 
 ## Proyectos
