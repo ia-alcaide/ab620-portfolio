@@ -118,6 +118,18 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
 - [x] Día 11
   Repaso + mini-simulacro (3.5/5) — Lección: no generalizar desde un único caso práctico a la regla del examen
 
+- [x] Día 12 — Capacidades autónomas y desencadenadores por evento
+  - Workflow (no Agent flow) con trigger "Cuando se crea un elemento"
+    (SharePoint) — distinto del trigger "When an agent calls the flow"
+  - Diferencia clave: agente reactivo (espera conversación) vs
+    autónomo (se activa solo por evento externo)
+  - Probado con éxito: nueva fila en SharePoint → email automático
+    sin intervención humana en el chat
+  - Riesgo identificado: sin límite de frecuencia, un alta masiva
+    de filas dispararía múltiples emails sin control — mejora
+    pendiente para diseño de producción real
+  - Competencia AB-620: "Configure event-triggered automation"
+
 
 ## Proyectos
 1. Agente de FAQ (en progreso)
