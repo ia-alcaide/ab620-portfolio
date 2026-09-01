@@ -141,6 +141,22 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
     con Skills y Herramientas
   - Competencia AB-620: "Configure multi-agent collaboration (A2A)"
 
+- [x] Día 14 — Fabric data agents (conceptual)
+  - Intentado conectar "Fabric IQ Data MCP" desde el agente
+  - Error real obtenido: "No se pudo cargar el selector de datos de
+    Microsoft Fabric" — confirma que Fabric requiere capacidad/workspace
+    propio, no disponible en el Power Apps Developer Plan gratuito
+    (a diferencia de Dataverse, que sí viene incluido)
+  - Comparativa Dataverse vs Fabric:
+    - Dataverse: datos operativos/transaccionales, volumen moderado,
+      gratis en Developer Plan (Día 13: tabla Empleado funcionando)
+    - Fabric: datos analíticos/BI a gran escala, requiere capacidad
+      de pago o workspace específico
+  - Ambos se conectan a Copilot Studio vía MCP (mismo mecanismo,
+    fuente de datos distinta)
+  - Respuesta a caso práctico: ventas de 15 países distintos con
+    históricos de años → Fabric, no Dataverse (volumen y naturaleza
+    analítica del caso)
 
 ## Proyectos
 1. Agente de FAQ (en progreso)
