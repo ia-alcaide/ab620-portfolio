@@ -158,6 +158,27 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
     históricos de años → Fabric, no Dataverse (volumen y naturaleza
     analítica del caso)
 
+- [x] Día 15 — Computer use (conceptual)
+  - No disponible en el tenant de prueba (Developer Plan + trial M365) —
+    mismo patrón que Fabric (Día 19): funcionalidad en GA a nivel de
+    producto (desde mayo 2026) pero requiere licencia/créditos Copilot
+    no incluidos en plan gratuito
+  - Concepto: agente que opera una interfaz visual (clics, escritura,
+    navegación) para sistemas sin API — bucle mirar/razonar/actuar,
+    se adapta a cambios de interfaz a diferencia de RPA tradicional
+  - Modelos GA en producción: OpenAI CUA, Claude Sonnet 4.5.
+    Claude Sonnet 4.6 y Opus 4.6: Experimental, no soportados en
+    producción — matiz relevante para el examen
+  - Gobernanza: credenciales en Azure Key Vault, auditoría en Purview
+    y Dataverse con reproducción de sesión, HITL configurable por
+    umbral de confianza
+  - Cuándo usarlo: solo cuando NO existe API (sistema legacy, portal
+    de terceros) — más caro y menos determinista que un conector,
+    así que conector/MCP tiene prioridad cuando existe alternativa
+  - IMPORTANTE: no confundir con el conector "Computer Vision API"
+    (análisis de imágenes), que apareció al buscar "computer" y es
+    un producto completamente distinto
+
 ## Proyectos
 1. Agente de FAQ (en progreso)
 2. Agente de soporte interno
