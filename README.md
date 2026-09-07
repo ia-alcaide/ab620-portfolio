@@ -179,6 +179,28 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
     (análisis de imágenes), que apareció al buscar "computer" y es
     un producto completamente distinto
 
+  ## Semana 3 completada — Fase 4: Agentes avanzados y autónomos
+- Día 15: Autonomía por evento (Workflow + trigger SharePoint)
+- Día 16-17: Connected agents (A2A) — Especialista IT + TicketsIncidencias
+- Día 18: Microsoft Foundry (conceptual, sin licencia Azure)
+- Día 19: Fabric data agents (conceptual, sin capacidad Fabric)
+- Día 20: Computer use (conceptual, sin créditos Copilot habilitados)
+- Día 21: Repaso + mini-simulacro — 5/5
+
+- [x] Día 16 — Entra ID: roles y permisos
+  - Auditoría de herramientas del agente "Atención al cliente":
+    - SharePoint (Get items): modo Usuario
+    - Servidor MCP Dataverse (read_query): modo Usuario
+    - TicketsIncidencias (conector personalizado): modo Usuario
+      (matiz: sin autenticación real, el modo Usuario no filtra aquí)
+  - HALLAZGO: modo "Usuario" es necesario pero no suficiente — depende
+    de que los permisos reales en SharePoint/Dataverse estén bien
+    configurados por persona. En un tenant de una sola cuenta (como
+    este entorno de pruebas), no se puede verificar el filtrado real
+    sin una segunda cuenta de prueba con permisos distintos
+  - Principio de mínimo privilegio aplicado por defecto en las tres
+    herramientas (ninguna en modo "Creador" sin necesidad)
+    
 ## Proyectos
 1. Agente de FAQ (en progreso)
 2. Agente de soporte interno
