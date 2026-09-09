@@ -200,6 +200,19 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
     sin una segunda cuenta de prueba con permisos distintos
   - Principio de mínimo privilegio aplicado por defecto en las tres
     herramientas (ninguna en modo "Creador" sin necesidad)
+
+- [x] Día 17 — DLP y entornos administrados
+  - Política DLP creada: SharePoint y Dataverse → Empresarial (Business)
+  - Conector personalizado TicketsIncidencias: patrón DLP basado en
+    el host real (jsonplaceholder.typicode.com/*), verificado en la
+    pestaña "General" del conector — no en el nombre visible del conector
+  - HALLAZGO: los conectores personalizados se clasifican en DLP por
+    patrón de URL/host de destino real de los datos, no por el nombre
+    que el maker le puso al conector. Regla comodín "*" → Omitir por
+    defecto si no se añade un patrón específico
+  - Lección de examen: DLP evalúa a dónde viajan los datos realmente,
+    no cómo está etiquetado el conector — un nombre "de confianza"
+    no protege si el host de destino no está bien clasificado
     
 ## Proyectos
 1. Agente de FAQ (en progreso)
