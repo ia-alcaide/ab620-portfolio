@@ -212,7 +212,21 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
     defecto si no se añade un patrón específico
   - Lección de examen: DLP evalúa a dónde viajan los datos realmente,
     no cómo está etiquetado el conector — un nombre "de confianza"
-    no protege si el host de destino no está bien clasificado
+    no protege si el host de destino no está bien clasificado.
+
+- [x] Día 18 — Prompt injection (teórico, práctica pendiente por créditos)
+  - AUTOEVALUACIÓN DE SEGURIDAD sobre mi propio sistema:
+    - RegistrarSolicitud (Día 4-5): SÍ tiene HITL → resistente a
+      injection que intente forzar ejecuciones no autorizadas
+    - TicketsIncidencias (Día 10): NO tiene HITL → vulnerable en
+      teoría a que una instrucción maliciosa (vía documento o chat)
+      dispare creación de tickets sin supervisión humana real
+  - Corrección de concepto: la resistencia a prompt injection no
+    depende de que el modelo "se comporte con cautela" — depende de
+    barreras técnicas estructurales (HITL, límites de frecuencia)
+    que no dependen de la decisión del modelo en cada momento
+  - Acción pendiente (mejora real de portafolio): añadir HITL o un
+    límite de ejecuciones a TicketsIncidencias para cerrar este gap.
     
 ## Proyectos
 1. Agente de FAQ (en progreso)
