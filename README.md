@@ -227,6 +227,29 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
     que no dependen de la decisión del modelo en cada momento
   - Acción pendiente (mejora real de portafolio): añadir HITL o un
     límite de ejecuciones a TicketsIncidencias para cerrar este gap.
+
+- [x] Día 19 — Prompt injection: ciclo completo de hallazgo y corrección
+  1. Vulnerabilidad inicial: TicketsIncidencias sin HITL → ataque
+     ejecutado directamente, ticket creado sin control (ID 101)
+  2. Primera corrección: creado CrearTicketConAprobacion con HITL
+     asíncrono (mismo patrón que RegistrarSolicitud, Día 4-5)
+  3. Segundo hallazgo (más importante): con ambas herramientas
+     disponibles en el agente a la vez, el modelo eligió la vía
+     directa e insegura por ser más simple — el parche no protegía
+     nada mientras la alternativa vulnerable siguiera accesible
+  4. Corrección final: eliminada TicketsIncidencias como herramienta
+     directa del agente. El conector sigue existiendo y siendo usado,
+     pero SOLO como pieza interna del flow, tras la aprobación —
+     nunca accesible directamente por el modelo
+  5. Verificado: mismo ataque repetido → "enviada para aprobación",
+     sin crear ticket hasta confirmación humana real
+
+  LECCIÓN DE GOBERNANZA CLAVE: no basta con construir la versión
+  segura de una capacidad — hay que auditar y eliminar TODAS las
+  vías alternativas que permitan saltársela. Un agente con dos
+  caminos hacia el mismo resultado (uno seguro, uno no) es tan
+  vulnerable como si solo tuviera el inseguro, porque el modelo
+  no tiene ningún incentivo estructural para preferir el más lento.
     
 ## Proyectos
 1. Agente de FAQ (en progreso)
