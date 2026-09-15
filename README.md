@@ -250,6 +250,25 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
   caminos hacia el mismo resultado (uno seguro, uno no) es tan
   vulnerable como si solo tuviera el inseguro, porque el modelo
   no tiene ningún incentivo estructural para preferir el más lento.
+
+- [x] Día 20 — Control de acceso a fuentes de conocimiento
+  - Auditoría de fuentes del agente "Atención al cliente":
+    - PDF subido directo (Día 3): SIN control de acceso real
+    - Sitio web externo: público, sin control aplicable
+    - SharePoint "Políticas": modo Usuario, hereda permisos reales
+  - GAP IDENTIFICADO Y CORREGIDO: PDF migrado de "subida directa al
+    agente" a biblioteca de documentos de SharePoint, con la fuente
+    de conocimiento reconectada apuntando a SharePoint en vez de al
+    archivo suelto — ahora hereda permisos reales configurables por
+    persona/grupo, igual que la lista "Políticas"
+  - Mismo patrón de corrección que el Día 24: eliminar la vía sin
+    control (PDF suelto) en vez de solo "añadir una alternativa mejor"
+    y dejar ambas activas
+  - Respuesta al caso de verificación: un documento con salarios NO
+    debería añadirse directamente a "Atención al cliente" (agente
+    que habla con todos los empleados) — requeriría o bien un agente
+    especialista separado (Connected agent, Día 16-17) con acceso
+    restringido, o permisos de SharePoint muy específicos por rol
     
 ## Proyectos
 1. Agente de FAQ (en progreso)
