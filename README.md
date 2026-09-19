@@ -268,7 +268,14 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
     debería añadirse directamente a "Atención al cliente" (agente
     que habla con todos los empleados) — requeriría o bien un agente
     especialista separado (Connected agent, Día 16-17) con acceso
-    restringido, o permisos de SharePoint muy específicos por rol
+    restringido, o permisos de SharePoint muy específicos por rol.
+
+- [x] Día 21 — Aprobación y rechazo de Tickets
+  - Se aprueban manualmente en Power Automate.
+  - Prueba hecha mediante CrearTicketConAprobación.
+  - Aprobadas a mano 2 de ellas y 1 Rechazada por intento de decir
+  al agente que ignorase instrucciones y creara el ticket directamente.
+  Pero la aprobación manual lo ha detenido y se puede ver quién lo ha intentado.
     
 ## Proyectos
 1. Agente de FAQ (en progreso)
