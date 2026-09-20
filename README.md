@@ -276,6 +276,12 @@ Microsoft Certified: AI Agent Builder Associate (Exam AB-620).
   - Aprobadas a mano 2 de ellas y 1 Rechazada por intento de decir
   al agente que ignorase instrucciones y creara el ticket directamente.
   Pero la aprobación manual lo ha detenido y se puede ver quién lo ha intentado.
+
+- [x] Día 22 — Hallazgo. Durante la exportación ALM se detectó que el agente "Atención al cliente"
+tenía la herramienta "Crear ticket de incidencia" (conector directo, sin HITL) todavía activa 
+— una regresión del hallazgo que nunca se limpió completamente en este agente. 
+Corregida eliminando la herramienta directa. Verificado repitiendo el ataque de injection: el modelo ahora 
+delega correctamente a Especialista IT → flow con aprobación pendiente, sin bypass.
     
 ## Proyectos
 1. Agente de FAQ (en progreso)
